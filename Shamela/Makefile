@@ -20,6 +20,7 @@ train:
 
 clean:
 	$(info ## Cleaning Directories & Files:)
+	rm -rf shamelaCorpus*
 	rm -rf shamelaCorpora/*.bin
 	rm -rf *.txt *.tmp/ zips shamela
 	rm -rf shamela_corpus_unproces* VCs
@@ -27,6 +28,7 @@ clean:
 
 delete:
 	$(info ## Deleting All Directories & Files:)
+	rm -rf shamelaCorpus*
 	rm -rf shamelaCorpora/*.bin
 	rm -rf shamelaVocab/ shamela
 	rm -rf count_shamelaCorpus*.csv VCs
