@@ -3,7 +3,6 @@ all: install extract preprocess vocab count train clean
 install:
 	@bash installRequirements.sh
 
-
 extract:
 	@bash extractShamela.sh
 
