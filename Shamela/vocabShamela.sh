@@ -19,7 +19,7 @@ while read line; do
     VOCAB_FILE=vocab_$CORPUS
     VERBOSE=2
     VOCAB_MIN_COUNT=1
-    printf "   # Using GloVe to Build Vocabulary for '$line':"
+		printf "   # Using GloVe to Build Vocabulary for '$line':"
     ../shamelaVocab/vocab_count -min-count $VOCAB_MIN_COUNT -verbose $VERBOSE < $CORPUS > ../shamelaVocab/$VOCAB_FILE
     sleep 1 ; n=$((n+1))
 done < $filename

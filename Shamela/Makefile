@@ -1,8 +1,8 @@
-all: extract preprocess vocab count train clean
+all: install extract preprocess vocab count train clean
 
 install:
-	@cat requirements.system | xargs brew install
-	@pip3 install -r requirements.pip
+	@bash installRequirements.sh
+
 
 extract:
 	@bash extractShamela.sh
