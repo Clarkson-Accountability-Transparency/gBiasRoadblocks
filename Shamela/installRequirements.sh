@@ -15,7 +15,7 @@ esac
 
 if [[ $OS_NAME == 'linux' ]]; then
   printf "   # Installing System Requirements:\n"
-  cat requirements.system | xargs sudo apt install
+  cat requirements.system | xargs sudo apt -qq install -y
   printf "   # Installing Packages Requirements:\n"
   yes | pip3 install -r requirements.pip --quiet
 
