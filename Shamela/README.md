@@ -40,3 +40,76 @@ The basic Python requirements are using python3 and installing a few used packag
      cat requirements.system | xargs brew install
      yes | pip3 install -r requirements.pip --quiet
      ```
+
+## Running All Scripts:
+
+You can run all the bash scripts using the `Makefile` command: `make`. We recommend you to run it inside a `screen` or `tmux` session because the execution will take a while. The `make` command will cleanup the unnecessary directories and files by the end of the execution. To run `Makefile` commands separately or run bash scripts directly, you need to follow the following order of executing the commands.
+
+#### 1. Installing Requirements:
+
+```bash
+make install # OR #
+sudo bash installRequirements.sh
+```
+
+#### 2. Downloading/Extracting Shamela:
+
+```bash
+make extract # OR #
+sudo bash extractShamela.sh
+```
+
+#### 3. Preprocessing Shamela:
+
+```bash
+make preprocess # OR #
+sudo bash preprocessShamela.sh
+```
+
+#### 4. Building Vocabulary:
+
+```bash
+make vocab # OR #
+sudo bash vocabShamela.sh
+```
+
+#### 5. Counting Words and Frequencies:
+
+```bash
+make count # OR #
+sudo bash countShamela.sh
+```
+
+#### 6. Training GloVe Models:
+
+```bash
+make train # OR #
+sudo bash trainShamela.sh
+```
+
+#### 7. Cleaning Unnecessary Directories & Files:
+
+```bash
+make clean 
+# OR #
+rm -rf shamelaCorpus*
+rm -rf shamelaCorpora/*.bin
+rm -rf *.txt *.tmp/ zips shamela
+rm -rf shamela_corpus_unproces* VCs
+@make --directory=GloVe-Arabic/ clean
+```
+
+#### 8. Deleting All Directories & Files:
+
+```bash
+make delete 
+# OR #
+rm -rf shamelaCorpus*
+rm -rf shamelaCorpora/*.bin
+rm -rf shamelaVocab/ shamela
+rm -rf count_shamelaCorpus*.csv VCs
+@make --directory=GloVe-Arabic/ clean
+rm -rf *.zip shamelaCorp*/ *.tmp/ zips *.txt
+rm -rf allDocBooks/ allTextBooks/ allTextBooks*/
+rm -rf shamela_corpus_unprocessed* shamelaVectors/
+```
