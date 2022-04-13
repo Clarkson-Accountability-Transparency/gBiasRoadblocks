@@ -16,7 +16,7 @@ The basic Python requirements are using python3 and installing a few used packag
 
 - Auto Installation: 
   
-  The `Makefile` will automatically install all the system and python requirements and all bash scripts, but running the installation commands first seems wise. To do so, use the `make` command or run the bash script directly.
+  The `Makefile` will automatically install all the system and python requirements and bash scripts, but running the installation commands first seems wise. To do so, you can use the `make` command or run the bash script directly.
   
   ```bash
   make install
@@ -26,7 +26,7 @@ The basic Python requirements are using python3 and installing a few used packag
 
 - Manual Installation:
   
-  If you prefer installing command-line utilities and python packages manually, use these two commands based on the operation system. 
+  If you prefer installing command-line utilities and python packages manually, use these commands based on your operation system.
   
   1. Unix/Linux:
      
