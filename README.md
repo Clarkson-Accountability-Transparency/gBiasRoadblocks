@@ -12,7 +12,7 @@ In APCD directory, you can find all the bash scripts used to download, extract, 
 
 ## Finally ...
 
-If you find used any of these scripts in your work, please kindly cite our paper. 
+If you find any of these scripts useful, please kindly cite our paper :-)
 
 #### Cite (ACL):
 
