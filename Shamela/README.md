@@ -10,7 +10,7 @@ These bash scripts use several Unix/Linux command-line utilities like `tr` (for 
 
 #### 2. Python Requirements:
 
-The basic Python requirements are using python3 and installing a few used packages/models using `pip3`. The python file `countShamela.py` counts the word counts and frequencies for the defining and historical/modern profession set words, returns the vocabulary size, and exports these results for each time period of the Shamela dataset to CSV files. 
+The basic Python requirements are using python3 and installing a few used packages/models using `pip3`.  The list of the system requirements can be found in [requirements.pip](https://github.com/Clarkson-Accountability-Transparency/gBiasRoadblocks/blob/main/Shamela/requirements.system "requirements.pip"). 
 
 #### Requirements' Installation:
 
