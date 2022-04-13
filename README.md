@@ -22,6 +22,6 @@ TBA
 
 TBA
 
-#### Cite (BibTex):
+#### Cite (BibTeX):
 
 TBA
