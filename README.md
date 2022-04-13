@@ -20,7 +20,7 @@ TBA
 
 #### Cite (Informal):
 
-TBA
+[Roadblocks in Gender Bias Measurement for Diachronic Corpora](https://lin-web.clarkson.edu/~jmatthew/LChange2022/) (Alshahrani et al., LChange 2022)
 
 #### Cite (BibTeX):
 
