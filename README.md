@@ -14,14 +14,10 @@ In APCD directory, you can find all the bash scripts used to download, extract, 
 
 If you find any of these scripts useful, please kindly cite our paper :-)
 
-#### Cite (ACL):
+#### ACL:
 
 TBA
 
-#### Cite (Informal):
-
-[Roadblocks in Gender Bias Measurement for Diachronic Corpora](https://lin-web.clarkson.edu/~jmatthew/LChange2022/) (Alshahrani et al., LChange 2022)
-
-#### Cite (BibTeX):
+#### BibTeX:
 
 TBA
