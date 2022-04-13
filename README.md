@@ -1,6 +1,6 @@
 # Roadblocks in Gender Bias Measurement for Diachronic Corpora
 
-In this repository, we contribute the scripts we wrote to process [Shamela Library dataset](https://shamela.ws/) and [Arabic Poem Comprehensive Dataset (APCD)](https://hci-lab.github.io/ArabicPoetry-1-Private/) corpora that we used in our published paper ([Roadblocks in Gender Bias Measurement for Diachronic Corpora](https://lin-web.clarkson.edu/~jmatthew/LChange2022/)) in [the 3rd International Workshop on Computational Approaches to Historical Language Change 2022 (LChange'22)](https://languagechange.org/events/2022-acl-lchange/), ACL 2022, Dublin, Ireland.
+In this repository, we contribute the scripts we wrote to process the two Arabic corpora: [Shamela Library dataset](https://shamela.ws/) and [Arabic Poem Comprehensive Dataset (APCD)](https://hci-lab.github.io/ArabicPoetry-1-Private/) that we used in our published paper ([Roadblocks in Gender Bias Measurement for Diachronic Corpora](https://lin-web.clarkson.edu/~jmatthew/LChange2022/)) in [the 3rd International Workshop on Computational Approaches to Historical Language Change 2022 (LChange'22)](https://languagechange.org/events/2022-acl-lchange/), ACL 2022, Dublin, Ireland.
 
 ## Shamela Scripts:
 
