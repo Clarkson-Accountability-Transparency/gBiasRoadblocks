@@ -20,7 +20,7 @@ The basic Python requirements are using python3 and installing a few used packag
   
   ```bash
   make install
-  OR
+  # OR
   sudo bash installRequirements.sh
   ```
 
