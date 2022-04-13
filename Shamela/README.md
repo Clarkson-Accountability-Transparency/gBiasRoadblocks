@@ -1,6 +1,6 @@
 # Shamela Scripts:
 
-We used these bash scripts to download, extract, preprocess, classify the Shamela dataset, export results and counts, and train GloVe models for each time period (before Islam/610, before 1900, after 1900). We used `Makefile` to run all bash scripts consecutively and correctly.  To run/install these scripts flawlessly, please follow the instructions below, and if you faced any difficulties, feel free to report an issue.
+We used these bash scripts to download, extract, preprocess, classify the Shamela dataset, export results and counts, and train GloVe models for each time period (before Islam/610, before 1900, and after 1900). We used `Makefile` to run all bash scripts consecutively and correctly.  To run/install these scripts flawlessly, please follow the instructions below, and if you faced any difficulties, feel free to report an issue.
 
 ## Installing Requirements:
 
@@ -43,7 +43,7 @@ The basic Python requirements are using python3 and installing a few used packag
 
 ## Running All Scripts:
 
-You can run all the bash scripts using the `Makefile` command: `make`. We recommend you to run it inside a `screen` or `tmux` session because the execution will take a while. The `make` command will cleanup the unnecessary directories and files by the end of the execution. To run `Makefile` commands separately or run bash scripts directly, you need to follow the following order of executing the commands.
+You can run all the bash scripts using the `Makefile` command: `make`. We recommend you to run it inside a `screen` or `tmux` session because the execution will take a while. The `make` command will cleanup the unnecessary directories and files by the end of the execution. To run `Makefile` commands separately or run bash scripts and commands directly, you need to follow the following order of executing the commands.
 
 #### 1. Installing Requirements:
 
