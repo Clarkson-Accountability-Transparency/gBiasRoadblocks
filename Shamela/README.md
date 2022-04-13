@@ -12,23 +12,21 @@ These bash scripts use several Unix/Linux command-line utilities like `tr` (for 
 
 The basic Python requirements are using python3 and installing a few used packages/models using `pip3`.  The list of the Python requirements can be found in [requirements.pip](https://github.com/Clarkson-Accountability-Transparency/gBiasRoadblocks/blob/main/Shamela/requirements.system "requirements.pip"). 
 
-#### Requirements' Installation:
+#### # Requirements' Installation:
 
-- Auto Installation: 
+- **Auto Installation**: 
   
-  The `Makefile` will automatically install all the system and python requirements and bash scripts, but running the installation commands first seems wise. To do so, you can use the `make` command or run the bash script directly.
+  The `Makefile` will automatically install all the system and python requirements and bash scripts, but running the installation commands first seems wise. To do so, you can use the `make install` command or run the bash script directly.
   
   ```bash
-  make install
-  # OR
   sudo bash installRequirements.sh
   ```
 
-- Manual Installation:
+- **Manual Installation**:
   
   If you prefer installing command-line utilities and python packages manually, use these commands based on your operation system.
   
-  1. Unix/Linux:
+  1. <u>Unix/Linux</u>:
      
      ```bash
      cat requirements.system | xargs sudo apt -qq install -y
@@ -36,7 +34,7 @@ The basic Python requirements are using python3 and installing a few used packag
      yes | pip3 install -r requirements.pip --quiet
      ```
   
-  2. macOS (using Homebrew):
+  2. <u>macOS (using Homebrew)</u>:
      
      ```bash
      cat requirements.system | xargs brew install
