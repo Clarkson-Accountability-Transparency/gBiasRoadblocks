@@ -13,4 +13,13 @@ while read line; do
     sleep 1 ; n=$((n+1))
 done < $filename
 
+if [ -d "shamelaCounts" ]
+then
+  printf "\n      >> Directory 'shamelaCounts' already exists!"
+else
+  mkdir shamelaCounts
+fi
+
+mv count_*.csv shamelaCounts/
+
 printf "## Exporting Counts of Shamela Library Dataset is Done. \n\n"
