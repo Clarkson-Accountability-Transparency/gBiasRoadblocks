@@ -11,32 +11,32 @@ These bash scripts use several Unix/Linux command-line utilities like `tr` (for 
 
 #### 2. Python Requirements:
 
-The basic Python requirements are using python3 and installing a few used packages/models using `pip3`.  The list of the Python requirements can be found in [requirements.pip](https://github.com/Clarkson-Accountability-Transparency/gBiasRoadblocks/blob/main/APCD/requirements.pip "requirements.pip"). 
+The basic Python requirements are using python3 and installing a few used packages/models using `pip3`.  The list of the Python requirements can be found in [requirements.pip](https://github.com/Clarkson-Accountability-Transparency/gBiasRoadblocks/blob/main/APCD/requirements.system "requirements.pip").
 
 #### # Requirements' Installation:
 
-- **Auto Installation**: 
-  
+- **Auto Installation**:
+
   The `Makefile` will automatically install all the system and python requirements and bash scripts, but running the installation commands first seems wise. To do so, you can use the `make install` command or run the bash script directly.
-  
+
   ```bash
   sudo bash installRequirements.sh
   ```
 
 - **Manual Installation**:
-  
+
   If you prefer installing command-line utilities and python packages manually, use these commands based on your operation system.
-  
+
   1. <u>Unix/Linux</u>:
-     
+
      ```bash
      cat requirements.system | xargs sudo apt -qq install -y
      sudo apt -qq install python3-pip -y
      yes | pip3 install -r requirements.pip --quiet
      ```
-  
+
   2. <u>macOS (using Homebrew)</u>:
-     
+
      ```bash
      cat requirements.system | xargs brew install
      yes | pip3 install -r requirements.pip --quiet
@@ -91,22 +91,21 @@ sudo bash trainAPCD.sh
 #### 7. Cleaning Unnecessary Directories & Files:
 
 ```bash
-make clean 
+make clean
 # OR #
-rm -rf ages VCs APCD.csv
-rm -rf vocabAPCD/vocab_count
-rm -rf Poems/*.bin *.txt *.tmp
+rm -rf ages VCs poemsACPD/*.bin
 @make --directory=GloVe-Arabic/ clean
+rm -rf vocabsAPCD/vocab_count *.txt *.tmp
 ```
 
 #### 8. Deleting All Directories & Files:
 
 ```bash
-make delete 
+make delete
 # OR #
-rm -rf vocabAPCD/vocab_count
-rm -rf Poems/ ages VCs APCD.csv
-rm -rf Poems/*.bin *.txt *.tmp *.zip
+rm -rf vocabsAPCD/vocab_count
+rm -rf poemsACPD/ ages VCs APCD.csv
 @make --directory=GloVe-Arabic/ clean
-rm -rf vocabAPCD/ vectorsAPCD/ countAPCD/
+rm -rf poemsACPD/*.bin *.txt *.tmp *.zip
+rm -rf vocabsAPCD/ vectorsAPCD/ countsAPCD/
 ```

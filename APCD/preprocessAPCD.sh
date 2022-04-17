@@ -8,9 +8,9 @@ preprocessingTools(){
 
 printf "## Preprocessing Arabic Poem Comprehensive Dataset:"
 
-ls Poems/ > ages
+ls poemsACPD/ > ages
 
-cd Poems/
+cd poemsACPD/
 
 printf "\n   # Preprocessing Arabic Poems of All Ages:"
 
@@ -23,6 +23,6 @@ while read line; do
   n=$((n+1))
 done < $filename
 
-cd .. 
+cd ..
 
 printf "\n## Preprocessing Arabic Poem Comprehensive Dataset is Done.\n\n"

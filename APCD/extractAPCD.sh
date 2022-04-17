@@ -13,7 +13,7 @@ else
   printf "     ["
   while kill -0 $PID 2> /dev/null; do
       printf "■"
-      sleep 1
+      sleep 0.33
   done
   printf "] done."
 fi
@@ -31,33 +31,33 @@ printf "\n   # Exporting Arabic Poems Based-on-Ages to Files:"
 filename='ages'
 IFS=$'\n'; n=1
 while read line; do
-    printf "\n      >> Exporting Arabic Poems of Age '$line' ."
+    printf "\n      >> Exporting Arabic Poems of Age '$line'."
     awk -F , '$1 == "'$line'" { print }' APCD.csv | awk -F, '{print $8}' > $line
     sleep 1 ; n=$((n+1))
 done < $filename
 
 printf "\n   # Renaming All Arabic Poems Files Based-on-Ages ... "
-if [ -d "Poems" ]
+if [ -d "poemsACPD" ]
 then
-  printf "\n      >> Directory 'Poems' already exists!"
+  printf "\n      >> Directory 'poemsACPD' already exists!"
 else
-  mkdir Poems
+  mkdir poemsACPD
 fi
 
-mv 'قبل الإسلام' Poems/PreIslamicAge
-mv 'الإسلامي' Poems/IslamicAge
-mv 'الأموي' Poems/UmayyadAge
-mv 'المملوكي' Poems/MamlukAge
-mv 'العباسي' Poems/AbbasidAge
-mv 'الأيوبي' Poems/AyyubidAge
-mv 'العثماني' Poems/OttomanAge
-mv 'الفاطمي' Poems/FatimidAge
-mv 'الحديث' Poems/ModernAge
-mv 'بين الدولتين' Poems/btwUmayyadAbbasidAge
-mv 'المغرب والأندلس' Poems/AndalusiaAge
+mv 'قبل الإسلام' poemsACPD/PreIslamicAge
+mv 'الإسلامي' poemsACPD/IslamicAge
+mv 'الأموي' poemsACPD/UmayyadAge
+mv 'المملوكي' poemsACPD/MamlukAge
+mv 'العباسي' poemsACPD/AbbasidAge
+mv 'الأيوبي' poemsACPD/AyyubidAge
+mv 'العثماني' poemsACPD/OttomanAge
+mv 'الفاطمي' poemsACPD/FatimidAge
+mv 'الحديث' poemsACPD/ModernAge
+mv 'بين الدولتين' poemsACPD/btwUmayyadAbbasidAge
+mv 'المغرب والأندلس' poemsACPD/AndalusiaAge
 
 printf "\n   # Concatenating All Ages of Arabic Poems ..."
-cat Poems/* > Poems/allAPCD
+cat poemsACPD/* > poemsACPD/allAPCD
 
 rm -rf ages ages.tmp
 

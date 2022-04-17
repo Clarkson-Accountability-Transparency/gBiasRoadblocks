@@ -32,7 +32,7 @@ if len(sys.argv) > 3:
 
 else:
     print("     ⚠ Error: No Files/Arguments Have Been Specified!!  You Need 3 Files!!  The  Correct  Usage: ")
-    print("      >> python countShamela.py <vocab_count_file> <old_profession_yaml> <modern_profession_yaml>")
+    print("      >> python countAPCD.py <vocab_count_file> <old_profession_yaml> <modern_profession_yaml>")
     exit()
 
 

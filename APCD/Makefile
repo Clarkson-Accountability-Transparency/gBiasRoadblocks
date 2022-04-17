@@ -20,15 +20,15 @@ train:
 
 clean:
 	$(info ## Cleaning Directories & Files:)
-	rm -rf ages VCs APCD.csv
-	rm -rf vocabAPCD/vocab_count
-	rm -rf Poems/*.bin *.txt *.tmp
- 	@make --directory=GloVe-Arabic/ clean
+	rm -rf ages VCs poemsACPD/*.bin
+	@make --directory=GloVe-Arabic/ clean
+	rm -rf vocabsAPCD/vocab_count *.txt *.tmp
+
 
 delete:
 	$(info ## Deleting All Directories & Files:)
-	rm -rf vocabAPCD/vocab_count
-	rm -rf Poems/ ages VCs APCD.csv
-	rm -rf Poems/*.bin *.txt *.tmp *.zip
+	rm -rf vocabsAPCD/vocab_count
+	rm -rf poemsACPD/ ages VCs APCD.csv
 	@make --directory=GloVe-Arabic/ clean
-	rm -rf vocabAPCD/ vectorsAPCD/ countAPCD/
+	rm -rf poemsACPD/*.bin *.txt *.tmp *.zip
+	rm -rf vocabsAPCD/ vectorsAPCD/ countsAPCD/
