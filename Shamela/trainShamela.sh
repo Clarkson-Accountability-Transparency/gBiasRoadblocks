@@ -2,7 +2,7 @@
 
 set -e # exit if an error occurs.
 
-printf "## Training GloVe Models for Shamela Library Corpora:"
+printf "## Training GloVe Models for Shamela Library Corpora:\n"
 
 ls shamelaCorpora/ > shamela
 cd shamelaCorpora/
@@ -38,7 +38,7 @@ while read line; do
     printf  "   # Fitting GloVe Model on '$line':\n"
     ../GloVe-Arabic/$BUILDDIR/glove -save-file $SAVE_FILE -threads $NUM_THREADS -input-file $COOCCURRENCE_SHUF_FILE -x-max $X_MAX -iter $MAX_ITER -vector-size $VECTOR_SIZE -binary $BINARY -vocab-file ../shamelaVocab/$VOCAB_FILE -verbose $VERBOSE
 
-    printf  "   # Removing Unnecessary Directories & Files ..."
+    printf  "   # Removing Unnecessary Directories & Files ...\n"
     make --directory=../GloVe-Arabic/ clean
     rm -rf *.bin
 
