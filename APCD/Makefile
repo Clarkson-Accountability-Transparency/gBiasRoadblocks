@@ -24,6 +24,7 @@ clean:
 	@make --directory=GloVe-Arabic/ clean
 	rm -rf vocabsAPCD/vocab_count *.txt *.tmp
 
+
 delete:
 	$(info ## Deleting All Directories & Files:)
 	rm -rf vocabsAPCD/vocab_count
