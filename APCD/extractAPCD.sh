@@ -13,7 +13,7 @@ else
   printf "     ["
   while kill -0 $PID 2> /dev/null; do
       printf "■"
-      sleep 0.33
+      sleep 0.1
   done
   printf "] done."
 fi
