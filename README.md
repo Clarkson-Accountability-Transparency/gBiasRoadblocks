@@ -16,7 +16,7 @@ If you find any of these scripts useful, please kindly cite our paper :-)
 
 #### ACL:
 
-TBA
+Saied Alshahrani, Esma Wali, Abdullah R Alshamsan, Yan Chen, and Jeanna Matthews. 2022. Roadblocks in Gender Bias Measurement for Diachronic Corpora. In Proceedings of the 3rd International Workshop on Computational Approaches to Historical Language Change 2022, Online. Association for Computational Linguistics.
 
 #### BibTeX:
 
