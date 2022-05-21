@@ -16,8 +16,23 @@ If you find any of these scripts useful, please kindly cite our paper :-)
 
 #### Citation:
 
-> Saied Alshahrani, Esma Wali, Abdullah R Alshamsan, Yan Chen, and Jeanna Matthews. 2022. Roadblocks in Gender Bias Measurement for Diachronic Corpora. In Proceedings of the 3rd International Workshop on Computational Approaches to Historical Language Change 2022. Association for Computational Linguistics.
+> Saied Alshahrani, Esma Wali, Abdullah R Alshamsan, Yan Chen, and Jeanna Matthews. 2022. [Roadblocks in Gender Bias Measurement for Diachronic Corpora](https://aclanthology.org/2022.lchange-1.15). In *Proceedings of the 3rd Workshop on Computational Approaches to Historical Language Change*, pages 140–148, Dublin, Ireland. Association for Computational Linguistics.
 
 #### BibTeX:
 
-TBA
+> @inproceedings{alshahrani-etal-2022-roadblocks,
+    title = "Roadblocks in Gender Bias Measurement for Diachronic Corpora",
+    author = "Alshahrani, Saied  and
+      Wali, Esma  and
+      R Alshamsan, Abdullah  and
+      Chen, Yan  and
+      Matthews, Jeanna",
+    booktitle = "Proceedings of the 3rd Workshop on Computational Approaches to Historical Language Change",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.lchange-1.15",
+    pages = "140--148",
+}
+
