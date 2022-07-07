@@ -10,7 +10,7 @@ These bash scripts use several Unix/Linux command-line utilities like `tr` (for 
 
 #### 2. Python Requirements:
 
-The basic Python requirements are using python3 and installing a few used packages/models using `pip3`.  The list of the Python requirements can be found in [requirements.pip](https://github.com/Clarkson-Accountability-Transparency/gBiasRoadblocks/blob/main/Shamela/requirements.system "requirements.pip"). 
+The basic Python requirements are using python3 and installing a few used packages/models using `pip3`.  The list of the Python requirements can be found in [requirements.pip](https://github.com/Clarkson-Accountability-Transparency/gBiasRoadblocks/blob/main/Shamela/requirements.pip "requirements.pip"). 
 
 #### # Requirements' Installation:
 
